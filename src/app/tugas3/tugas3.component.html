@@ -1,0 +1,20 @@
+<p>
+  Tugas 3
+</p>
+
+<button class="btn btn-primary" (click)="(tampilkan())">
+  Tampilkan Detail  
+</button>
+<br>
+ <p> {{ tampil }} </p>
+
+
+
+<p *ngFor="let i of log; let j = index" 
+[ngClass]="{warnaku: j>=4 && j<=9}"
+[ngStyle]="{'background-color': j>=4 && j<=9 ? 'blue' : 'white'}"
+>
+{{i}}
+</p>
+
+
